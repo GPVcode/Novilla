@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/1.png",
+    "logo": "shopify:\/\/shop_images\/vertical.png",
     "logo_width": 90,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -12,12 +12,12 @@
     "spacing_grid_vertical": 8,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "none",
-    "buttons_border_thickness": 1,
+    "buttons_border_thickness": 0,
     "buttons_border_opacity": 100,
-    "buttons_radius": 0,
-    "buttons_shadow_opacity": 0,
+    "buttons_radius": 16,
+    "buttons_shadow_opacity": 15,
     "buttons_shadow_horizontal_offset": 0,
-    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_vertical_offset": 0,
     "buttons_shadow_blur": 5,
     "variant_pills_border_thickness": 1,
     "variant_pills_border_opacity": 55,
@@ -137,7 +137,7 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#dccdf0",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
@@ -151,8 +151,8 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#121212",
-          "button_label": "#f3f3f3",
+          "button": "#dccdf0",
+          "button_label": "#242833",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
@@ -162,7 +162,7 @@
           "background": "#242833",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#ffffff",
+          "button": "#dccdf0",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
@@ -173,7 +173,7 @@
           "background": "#121212",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#ffffff",
+          "button": "#dccdf0",
           "button_label": "#121212",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
@@ -181,9 +181,9 @@
       },
       "accent-2": {
         "settings": {
-          "background": "#334fb4",
+          "background": "#dccdf0",
           "background_gradient": "",
-          "text": "#ffffff",
+          "text": "#000000",
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
@@ -382,5 +382,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+
+    ]
   }
 }
