@@ -1,0 +1,170 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore Novilla's Handcrafted Anxiety Relief Rings: A Blend of Elegance and Mindfulness",
+            "heading_size": "h1"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image_2": "shopify:\/\/shop_images\/Ring_IMage_stock.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "accent-1",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h0",
+        "description": "<h2>A Blend of Elegance and Mindfulness<\/h2>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 9,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "round",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a249c4b9-045a-4c54-ab58-3a8e5dcfabca": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21515407687987__a249c4b9-045a-4c54-ab58-3a8e5dcfabca-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "My favorite ring",
+            "heading_size": "h1"
+          }
+        },
+        "template--21515407687987__a249c4b9-045a-4c54-ab58-3a8e5dcfabca-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Thank you, Novilla, for creating something that not only looks great but also provides such a sense of peace and calm.\" - Reese Witherspoon<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "template--21515407687987__a249c4b9-045a-4c54-ab58-3a8e5dcfabca-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Check it out!",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21515407687987__a249c4b9-045a-4c54-ab58-3a8e5dcfabca-heading-1",
+        "template--21515407687987__a249c4b9-045a-4c54-ab58-3a8e5dcfabca-text-1",
+        "template--21515407687987__a249c4b9-045a-4c54-ab58-3a8e5dcfabca-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/woman-playing-with-blonde-hair.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "92ec192c-6e67-47af-ad18-55135cea6b52": {
+      "type": "image-with-text",
+      "blocks": {
+        "4679b809-c3ff-4865-8f03-2aeafb7fc3e2": {
+          "type": "heading",
+          "settings": {
+            "heading": "My favorite ring",
+            "heading_size": "h1"
+          }
+        },
+        "68c56e59-8e24-469e-8494-c41bc8b9a77b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Total game changer! I use this ring all the time while I work. Helps me all throughout my day!\" - Christiano Nah<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "c0346da1-f126-457b-a326-3e0acbfd4d25": {
+          "type": "button",
+          "settings": {
+            "button_label": "Check it out!",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "4679b809-c3ff-4865-8f03-2aeafb7fc3e2",
+        "68c56e59-8e24-469e-8494-c41bc8b9a77b",
+        "c0346da1-f126-457b-a326-3e0acbfd4d25"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mens-watch-and-ring.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "a249c4b9-045a-4c54-ab58-3a8e5dcfabca",
+    "92ec192c-6e67-47af-ad18-55135cea6b52"
+  ]
+}
