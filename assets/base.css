@@ -93,14 +93,34 @@ html.no-js .no-js-hidden {
   display: none !important;
 }
 
-.page-width {
+/* .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
   padding: 0 1.5rem;
+} */
+.section-template--21792920535347__image-with-text-padding.gradient.color-background-1 {
+    padding: 0;
+}
+.section-template--21782659072307__image-with-text-padding.gradient.color-background-1 {
+  padding: 0;
+}
+
+.image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__grid--reverse .image-with-text__content{
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: solid black 2px;
+}
+
+.image-with-text__media.image-with-text__media--medium.global-media-settings.gradient.color-inverse.media.animate--zoom-in {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: solid black 2px;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
-  max-width: 100%;
+  max-width: 1200px;
 }
 
 .page-width.drawer-menu {
@@ -117,9 +137,14 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   padding-right: 3rem;
 }
 
+.essential_annoucement_bar_wrapper.essential_annoucement_bar_wrapper_d6de6bc7-8f40-4f44-94d9-ba41047e7550.essential_annoucement_bar_wrapper_d6de6bc7-8f40-4f44-94d9-ba41047e7550_.top_page.top_page_styles {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0;
   }
 
   .header.page-width,
@@ -170,6 +195,21 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 @media screen and (min-width: 750px) {
   .section + .section {
     margin-top: var(--spacing-sections-desktop);
+  }
+
+  .image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__grid--reverse .image-with-text__content{
+    border-top: 0;
+    border-right: solid black 2px;
+    border-left: 0;
+    border-bottom: solid black 2px;
+    
+  }
+
+  .image-with-text__media.image-with-text__media--medium.global-media-settings.gradient.color-inverse.media.animate--zoom-in {
+    border-top: 0;
+    border-right: 0;
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
   }
 }
 
@@ -287,6 +327,7 @@ h5,
 .hxl {
   font-size: calc(var(--font-heading-scale) * 5rem);
 }
+
 
 @media only screen and (min-width: 750px) {
   .hxl {
@@ -1290,7 +1331,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
 .shopify-payment-button__button--unbranded:hover::after {
-  --border-offset: 1.3px;
+  --border-offset: 1.2px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
@@ -1373,7 +1414,7 @@ button.shopify-payment-button__button--unbranded {
   }
 }
 
-.button.loading > .loading-overlay__spinner {
+.button.loading > .loading__spinner {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1383,11 +1424,11 @@ button.shopify-payment-button__button--unbranded {
   align-items: center;
 }
 
-.button.loading > .loading-overlay__spinner .spinner {
+.button.loading > .loading__spinner .spinner {
   width: fit-content;
 }
 
-.button.loading > .loading-overlay__spinner .path {
+.button.loading > .loading__spinner .path {
   stroke: rgb(var(--color-button-text));
 }
 
@@ -2001,7 +2042,7 @@ input[type='checkbox'] {
 }
 
 .quantity__rules {
-  margin-top: 1.2rem;
+  margin-top: 0.5rem;
   position: relative;
   font-size: 1.2rem;
 }
@@ -2021,8 +2062,8 @@ input[type='checkbox'] {
   position: relative;
 }
 
-product-info .loading-overlay:not(.hidden) ~ *,
-.quantity__rules-cart .loading-overlay:not(.hidden) ~ * {
+product-info .loading__spinner:not(.hidden) ~ *,
+.quantity__rules-cart .loading__spinner:not(.hidden) ~ * {
   visibility: hidden;
 }
 
@@ -2315,25 +2356,13 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 @keyframes translateAnnouncementSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(var(--announcement-translate-from));
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  0% {opacity: 0; transform: translateX(var(--announcement-translate-from))}
+  100% {opacity: 1; transform: translateX(0)}
 }
 
 @keyframes translateAnnouncementSlideOut {
-  0% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(var(--announcement-translate-to));
-  }
+  0% {opacity: 1; transform: translateX(0)}
+  100% {opacity: 0; transform: translateX(var(--announcement-translate-to))}
 }
 
 /* section-header */
@@ -2371,6 +2400,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  border-bottom: solid black 2px;
 }
 
 .header-wrapper--border-bottom {
@@ -3501,7 +3531,7 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]):hover:after,
   .animate--hover-vertical-lift .customer button:not([disabled]):hover:after,
   .animate--hover-vertical-lift .shopify-payment-button__button:not([disabled]):hover:after {
-    --border-offset: 0.3px; /* Default is 1.3px as defined above in this file. This removes 1px to prevent the border from growing on buttons when this effect is on.  */
+    --border-offset: 0.2px; /* Default is 1.2px as defined above in this file. This removes 1px to prevent the border from growing on buttons when this effect is on.  */
     box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
         rgba(var(--color-button-text), var(--border-opacity)),
       0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));

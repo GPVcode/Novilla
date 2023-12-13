@@ -7,9 +7,10 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
-            "text": "Soft Launch Deals Happening Now!",
-            "link": "shopify:\/\/collections\/soothing-circle-rings-by-novilla"
+            "text": "FREE SHIPPING ON ALL ORDERS 40$ AND UP! |FREE SHIPPING ON ALL ORDERS 40$ AND UP!",
+            "link": ""
           }
         }
       },
@@ -17,7 +18,7 @@
         "announcement-bar-0"
       ],
       "settings": {
-        "color_scheme": "accent-2",
+        "color_scheme": "inverse",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -31,11 +32,11 @@
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
-        "menu_type_desktop": "drawer",
+        "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
-        "color_scheme": "background-2",
-        "menu_color_scheme": "background-2",
+        "show_line_separator": false,
+        "color_scheme": "inverse",
+        "menu_color_scheme": "background-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",

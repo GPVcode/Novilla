@@ -3,7 +3,7 @@
 }
 
 .footer:not(.color-background-1) {
-  border-top: none;
+  border-top: solid black 2px;
 }
 
 .footer__content-top {

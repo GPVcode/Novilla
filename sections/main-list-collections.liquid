@@ -5,6 +5,8 @@
   <h1 class="title title--primary inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ section.settings.title }}
   </h1>
+
+  
   {%- liquid
     case section.settings.sort
       when 'products_high', 'products_low'

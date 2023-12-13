@@ -1,6 +1,6 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="page-width section-{{ section.id }}-padding"
+  class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -8,7 +8,6 @@
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
-  {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
   {%- if product.quantity_price_breaks_configured? -%}
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
@@ -62,31 +61,8 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-
-  {% style %}  
-    .product-navigation {
-      display: flex;
-      justify-content: {% if collection.previous_product %}space-between{% else %}flex-end{% endif %};
-      width: 100%;
-      padding-bottom: {{ settings.product_navigation_padding_bottom }}px;
-    }
-  {% endstyle %}
-
-  
-  {% if settings.show_product_navigation %}
-    <div class="product-navigation">
-      {% if collection.previous_product %}
-        <a class="button previous" href="{{ collection.previous_product }}">{{ settings.product_navigation_previous_text | escape }}</a>
-      {% endif %}
-      {% if collection.next_product %}
-        <a class="button next" href="{{ collection.next_product }}">{{ settings.product_navigation_next_text | escape }}</a>
-      {% endif %}
-    </div>
-  {% endif %}
-
-
-
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="page-width">
+    <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
@@ -129,7 +105,7 @@
                 -%}
               </div>
               {%- if product.quantity_price_breaks_configured? -%}
-                <div class="volume-pricing-note">
+                <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
                   <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                 </div>
               {%- endif -%}
@@ -243,19 +219,7 @@
                 <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
                   {{ 'products.product.quantity.label' | t }}
                   <span class="quantity__rules-cart no-js-hidden{% if cart_qty == 0 %} hidden{% endif %}">
-                    <span class="loading-overlay hidden">
-                      <span class="loading-overlay__spinner">
-                        <svg
-                          aria-hidden="true"
-                          focusable="false"
-                          class="spinner"
-                          viewBox="0 0 66 66"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                      </span>
-                    </span>
+                    {%- render 'loading-spinner' -%}
                     <span>({{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}})</span>
                   </span>
                 </label>
@@ -357,7 +321,7 @@
                     </price-per-item>
                   {%- endif -%}
                 </div>
-                <div class="quantity__rules caption no-js-hidden">
+                <div class="quantity__rules caption no-js-hidden" id="Quantity-Rules-{{ section.id }}">
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                     <span class="divider">
                       {{-
@@ -444,12 +408,6 @@
               %}
 
             {%- when 'variant_picker' -%}
-              {%- if product.type == "Ring" %}
-                <div class="field">
-                 <input class="field__input" id="your-name" type="text" name="properties[Your name]" form="{{ product_form_id }}">
-                 <label class="field__label">Your name</label>
-                </div>
-              {%- endif -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
@@ -709,6 +667,7 @@
       ]
     }
   </script>
+  </div>
 </section>
 
 {% schema %}
@@ -2048,6 +2007,12 @@
       "id": "enable_sticky_info",
       "default": true,
       "label": "t:sections.main-product.settings.enable_sticky_info.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
     },
     {
       "type": "header",

@@ -1,23 +1,23 @@
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/vertical.png",
-    "logo_width": 90,
-    "type_header_font": "assistant_n4",
-    "heading_scale": 100,
-    "type_body_font": "catamaran_n4",
-    "body_scale": 100,
-    "page_width": 1200,
-    "spacing_sections": 0,
-    "spacing_grid_horizontal": 8,
-    "spacing_grid_vertical": 8,
+    "logo_width": 70,
+    "type_header_font": "open_sans_n4",
+    "heading_scale": 125,
+    "type_body_font": "anonymous_pro_n4",
+    "body_scale": 105,
+    "page_width": 1400,
+    "spacing_sections": 20,
+    "spacing_grid_horizontal": 24,
+    "spacing_grid_vertical": 24,
     "animations_reveal_on_scroll": true,
-    "animations_hover_elements": "none",
-    "buttons_border_thickness": 0,
+    "animations_hover_elements": "3d-lift",
+    "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
-    "buttons_radius": 16,
-    "buttons_shadow_opacity": 15,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 0,
     "buttons_shadow_horizontal_offset": 0,
-    "buttons_shadow_vertical_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
     "buttons_shadow_blur": 5,
     "variant_pills_border_thickness": 1,
     "variant_pills_border_opacity": 55,
@@ -35,8 +35,8 @@
     "inputs_shadow_blur": 5,
     "card_style": "standard",
     "card_image_padding": 0,
-    "card_text_alignment": "left",
-    "card_color_scheme": "background-2",
+    "card_text_alignment": "center",
+    "card_color_scheme": "background-1",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
     "card_corner_radius": 0,
@@ -46,8 +46,8 @@
     "card_shadow_blur": 5,
     "collection_card_style": "standard",
     "collection_card_image_padding": 0,
-    "collection_card_text_alignment": "left",
-    "collection_card_color_scheme": "background-2",
+    "collection_card_text_alignment": "center",
+    "collection_card_color_scheme": "background-1",
     "collection_card_border_thickness": 0,
     "collection_card_border_opacity": 10,
     "collection_card_corner_radius": 0,
@@ -57,8 +57,8 @@
     "collection_card_shadow_blur": 5,
     "blog_card_style": "standard",
     "blog_card_image_padding": 0,
-    "blog_card_text_alignment": "left",
-    "blog_card_color_scheme": "background-2",
+    "blog_card_text_alignment": "center",
+    "blog_card_color_scheme": "background-1",
     "blog_card_border_thickness": 0,
     "blog_card_border_opacity": 10,
     "blog_card_corner_radius": 0,
@@ -66,44 +66,44 @@
     "blog_card_shadow_horizontal_offset": 0,
     "blog_card_shadow_vertical_offset": 4,
     "blog_card_shadow_blur": 5,
-    "text_boxes_border_thickness": 0,
-    "text_boxes_border_opacity": 10,
+    "text_boxes_border_thickness": 2,
+    "text_boxes_border_opacity": 100,
     "text_boxes_radius": 0,
     "text_boxes_shadow_opacity": 0,
     "text_boxes_shadow_horizontal_offset": 0,
     "text_boxes_shadow_vertical_offset": 4,
     "text_boxes_shadow_blur": 5,
-    "media_border_thickness": 1,
-    "media_border_opacity": 5,
+    "media_border_thickness": 2,
+    "media_border_opacity": 100,
     "media_radius": 0,
     "media_shadow_opacity": 0,
     "media_shadow_horizontal_offset": 0,
     "media_shadow_vertical_offset": 4,
     "media_shadow_blur": 5,
-    "popup_border_thickness": 1,
-    "popup_border_opacity": 10,
+    "popup_border_thickness": 2,
+    "popup_border_opacity": 100,
     "popup_corner_radius": 0,
     "popup_shadow_opacity": 5,
     "popup_shadow_horizontal_offset": 0,
     "popup_shadow_vertical_offset": 4,
     "popup_shadow_blur": 5,
-    "drawer_border_thickness": 1,
-    "drawer_border_opacity": 10,
+    "drawer_border_thickness": 2,
+    "drawer_border_opacity": 100,
     "drawer_shadow_opacity": 0,
     "drawer_shadow_horizontal_offset": 0,
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
-    "badge_position": "bottom left",
+    "badge_position": "bottom right",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "accent-2",
-    "sold_out_badge_color_scheme": "inverse",
+    "sale_badge_color_scheme": "accent-1",
+    "sold_out_badge_color_scheme": "accent-1",
     "brand_headline": "",
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/facebook.com\/shopify",
-    "social_instagram_link": "http:\/\/instagram.com\/shopify",
-    "social_youtube_link": "https:\/\/www.youtube.com\/shopify",
-    "social_tiktok_link": "https:\/\/tiktok.com\/@shopify",
+    "social_facebook_link": "",
+    "social_instagram_link": "",
+    "social_youtube_link": "",
+    "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
@@ -117,6 +117,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "cart_color_scheme": "background-1",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -134,132 +135,140 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "5460033060862993441": {
+        "type": "shopify:\/\/apps\/essential-announcement-bar\/blocks\/app-embed\/93b5429f-c8d6-4c33-ae14-250fd84f361b",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#c8bed2",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "text": "#020912",
+          "button": "#020912",
+          "button_label": "#fcfcfc",
+          "secondary_button_label": "#020912",
+          "shadow": "#020912"
         }
       },
       "background-2": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#e4f6ff",
           "background_gradient": "",
-          "text": "#121212",
-          "button": "#dccdf0",
-          "button_label": "#242833",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
+          "text": "#020912",
+          "button": "#020912",
+          "button_label": "#e4f6ff",
+          "secondary_button_label": "#020912",
+          "shadow": "#020912"
         }
       },
       "inverse": {
         "settings": {
-          "background": "#242833",
+          "background": "#dbe9e0",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#dccdf0",
-          "button_label": "#000000",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#020912",
+          "button": "#020912",
+          "button_label": "#dbe9e0",
+          "secondary_button_label": "#020912",
+          "shadow": "#020912"
         }
       },
       "accent-1": {
         "settings": {
-          "background": "#121212",
+          "background": "#dbe9e0",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#dccdf0",
-          "button_label": "#121212",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#020912",
+          "button": "#fcfcfc",
+          "button_label": "#020912",
+          "secondary_button_label": "#fcfcfc",
+          "shadow": "#020912"
         }
       },
       "accent-2": {
         "settings": {
-          "background": "#dccdf0",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#000000",
-          "button": "#ffffff",
-          "button_label": "#334fb4",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
+          "text": "#020912",
+          "button": "#020912",
+          "button_label": "#ffdfb8",
+          "secondary_button_label": "#020912",
+          "shadow": "#020912"
         }
       }
     }
   },
   "presets": {
     "Default": {
-      "logo_width": 90,
+      "logo_width": 100,
       "color_schemes": {
         "background-1": {
           "settings": {
-            "background": "#FFFFFF",
+            "background": "#fcfcfc",
             "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
-            "button_label": "#FFFFFF",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
+            "text": "#020912",
+            "button": "#020912",
+            "button_label": "#fcfcfc",
+            "secondary_button_label": "#020912",
+            "shadow": "#020912"
           }
         },
         "background-2": {
           "settings": {
-            "background": "#F3F3F3",
+            "background": "#e4f6ff",
             "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
-            "button_label": "#F3F3F3",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
+            "text": "#020912",
+            "button": "#020912",
+            "button_label": "#e4f6ff",
+            "secondary_button_label": "#020912",
+            "shadow": "#020912"
           }
         },
         "inverse": {
           "settings": {
-            "background": "#242833",
+            "background": "#DBE9E0",
             "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#000000",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
+            "text": "#020912",
+            "button": "#020912",
+            "button_label": "#DBE9E0",
+            "secondary_button_label": "#020912",
+            "shadow": "#020912"
           }
         },
         "accent-1": {
           "settings": {
-            "background": "#121212",
+            "background": "#020912",
             "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#121212",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
+            "text": "#fcfcfc",
+            "button": "#fcfcfc",
+            "button_label": "#020912",
+            "secondary_button_label": "#fcfcfc",
+            "shadow": "#020912"
           }
         },
         "accent-2": {
           "settings": {
-            "background": "#334FB4",
+            "background": "#FFDFB8",
             "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#334FB4",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
+            "text": "#020912",
+            "button": "#020912",
+            "button_label": "#FFDFB8",
+            "secondary_button_label": "#020912",
+            "shadow": "#020912"
           }
         }
       },
-      "type_header_font": "assistant_n4",
-      "heading_scale": 100,
-      "type_body_font": "assistant_n4",
-      "body_scale": 100,
-      "page_width": 1200,
-      "spacing_sections": 0,
-      "spacing_grid_horizontal": 8,
-      "spacing_grid_vertical": 8,
+      "type_header_font": "avenir_next_n5",
+      "heading_scale": 125,
+      "type_body_font": "anonymous_pro_n4",
+      "body_scale": 105,
+      "page_width": 1400,
+      "spacing_sections": 20,
+      "spacing_grid_horizontal": 24,
+      "spacing_grid_vertical": 24,
       "animations_reveal_on_scroll": true,
       "animations_hover_elements": "none",
       "buttons_border_thickness": 1,
@@ -285,8 +294,8 @@
       "inputs_shadow_blur": 5,
       "card_style": "standard",
       "card_image_padding": 0,
-      "card_text_alignment": "left",
-      "card_color_scheme": "background-2",
+      "card_text_alignment": "center",
+      "card_color_scheme": "background-1",
       "card_border_thickness": 0,
       "card_border_opacity": 10,
       "card_corner_radius": 0,
@@ -296,8 +305,8 @@
       "card_shadow_blur": 5,
       "collection_card_style": "standard",
       "collection_card_image_padding": 0,
-      "collection_card_text_alignment": "left",
-      "collection_card_color_scheme": "background-2",
+      "collection_card_text_alignment": "center",
+      "collection_card_color_scheme": "background-1",
       "collection_card_border_thickness": 0,
       "collection_card_border_opacity": 10,
       "collection_card_corner_radius": 0,
@@ -307,8 +316,8 @@
       "collection_card_shadow_blur": 5,
       "blog_card_style": "standard",
       "blog_card_image_padding": 0,
-      "blog_card_text_alignment": "left",
-      "blog_card_color_scheme": "background-2",
+      "blog_card_text_alignment": "center",
+      "blog_card_color_scheme": "background-1",
       "blog_card_border_thickness": 0,
       "blog_card_border_opacity": 10,
       "blog_card_corner_radius": 0,
@@ -316,37 +325,37 @@
       "blog_card_shadow_horizontal_offset": 0,
       "blog_card_shadow_vertical_offset": 4,
       "blog_card_shadow_blur": 5,
-      "text_boxes_border_thickness": 0,
-      "text_boxes_border_opacity": 10,
+      "text_boxes_border_thickness": 2,
+      "text_boxes_border_opacity": 100,
       "text_boxes_radius": 0,
       "text_boxes_shadow_opacity": 0,
       "text_boxes_shadow_horizontal_offset": 0,
       "text_boxes_shadow_vertical_offset": 4,
       "text_boxes_shadow_blur": 5,
-      "media_border_thickness": 1,
-      "media_border_opacity": 5,
+      "media_border_thickness": 2,
+      "media_border_opacity": 100,
       "media_radius": 0,
       "media_shadow_opacity": 0,
       "media_shadow_horizontal_offset": 0,
       "media_shadow_vertical_offset": 4,
       "media_shadow_blur": 5,
-      "popup_border_thickness": 1,
-      "popup_border_opacity": 10,
+      "popup_border_thickness": 2,
+      "popup_border_opacity": 100,
       "popup_corner_radius": 0,
       "popup_shadow_opacity": 5,
       "popup_shadow_horizontal_offset": 0,
       "popup_shadow_vertical_offset": 4,
       "popup_shadow_blur": 5,
-      "drawer_border_thickness": 1,
-      "drawer_border_opacity": 10,
+      "drawer_border_thickness": 2,
+      "drawer_border_opacity": 100,
       "drawer_shadow_opacity": 0,
       "drawer_shadow_horizontal_offset": 0,
       "drawer_shadow_vertical_offset": 4,
       "drawer_shadow_blur": 5,
-      "badge_position": "bottom left",
+      "badge_position": "bottom right",
       "badge_corner_radius": 40,
-      "sale_badge_color_scheme": "accent-2",
-      "sold_out_badge_color_scheme": "inverse",
+      "sale_badge_color_scheme": "accent-1",
+      "sold_out_badge_color_scheme": "accent-1",
       "brand_headline": "",
       "brand_description": "<p><\/p>",
       "brand_image_width": 100,
@@ -367,6 +376,7 @@
       "show_vendor": false,
       "show_cart_note": false,
       "cart_drawer_collection": "",
+      "cart_color_scheme": "background-1",
       "sections": {
         "main-password-header": {
           "type": "main-password-header",
@@ -382,10 +392,5 @@
         }
       }
     }
-  },
-  "platform_customizations": {
-    "custom_css": [
-
-    ]
   }
 }
