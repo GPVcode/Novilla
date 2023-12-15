@@ -109,18 +109,26 @@ html.no-js .no-js-hidden {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: solid black 2px;
+  border-bottom: solid black 1px;
 }
 
 .image-with-text__media.image-with-text__media--medium.global-media-settings.gradient.color-inverse.media.animate--zoom-in {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: solid black 2px;
+  border-bottom: solid black 1px;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
+  max-width: 100%;
+}
+
+body.gradient.animate--hover-3d-lift {
   max-width: 1200px;
+  margin: 0 auto;
+  border: solid black 1px;
+  border-top: none;
+  border-bottom: none;
 }
 
 .page-width.drawer-menu {
@@ -139,7 +147,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 .essential_annoucement_bar_wrapper.essential_annoucement_bar_wrapper_d6de6bc7-8f40-4f44-94d9-ba41047e7550.essential_annoucement_bar_wrapper_d6de6bc7-8f40-4f44-94d9-ba41047e7550_.top_page.top_page_styles {
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 @media screen and (min-width: 750px) {
@@ -199,17 +207,17 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__grid--reverse .image-with-text__content{
     border-top: 0;
-    border-right: solid black 2px;
+    border-right: solid black 1px;
     border-left: 0;
-    border-bottom: solid black 2px;
+    border-bottom: solid black 1px;
     
   }
 
   .image-with-text__media.image-with-text__media--medium.global-media-settings.gradient.color-inverse.media.animate--zoom-in {
     border-top: 0;
     border-right: 0;
-    border-left: solid black 2px;
-    border-bottom: solid black 2px;
+    border-left: solid black 1px;
+    border-bottom: solid black 1px;
   }
 }
 
@@ -1331,7 +1339,7 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
 .shopify-payment-button__button--unbranded:hover::after {
-  --border-offset: 1.2px;
+  --border-offset: 1.1px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
@@ -2400,7 +2408,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
-  border-bottom: solid black 2px;
+  border-bottom: solid black 1px;
 }
 
 .header-wrapper--border-bottom {
@@ -3531,7 +3539,7 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]):hover:after,
   .animate--hover-vertical-lift .customer button:not([disabled]):hover:after,
   .animate--hover-vertical-lift .shopify-payment-button__button:not([disabled]):hover:after {
-    --border-offset: 0.2px; /* Default is 1.2px as defined above in this file. This removes 1px to prevent the border from growing on buttons when this effect is on.  */
+    --border-offset: 0.1px; /* Default is 1.1px as defined above in this file. This removes 1px to prevent the border from growing on buttons when this effect is on.  */
     box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
         rgba(var(--color-button-text), var(--border-opacity)),
       0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));

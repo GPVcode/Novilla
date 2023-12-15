@@ -698,7 +698,7 @@ a.product__text {
   .product__media-toggle:focus-visible:after,
   .product-form__input input[type='radio']:focus-visible + label {
     outline: transparent solid 1px;
-    outline-offset: 2px;
+    outline-offset: 1px;
   }
 }
 .product__media-toggle.focused {
