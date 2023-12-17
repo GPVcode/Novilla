@@ -35,7 +35,7 @@
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
-        "color_scheme": "inverse",
+        "color_scheme": "background-1",
         "menu_color_scheme": "background-1",
         "enable_country_selector": true,
         "enable_language_selector": true,

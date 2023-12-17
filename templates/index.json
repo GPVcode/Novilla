@@ -6,8 +6,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Our latest",
-            "heading_size": "h0"
+            "heading": "WE SELL HANDCRAFTED ANXIETY RELIEF RINGS FOR MINDFUL CALMNESS & STRESS REDUCTION.",
+            "heading_size": "h2"
           }
         },
         "button": {
@@ -24,25 +24,28 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sun_ring_purple_trees.heic",
-        "height": "medium",
+        "image": "shopify:\/\/shop_images\/Banner_image_2.png",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
         "section_color_scheme": "background-1",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "image_behavior": "zoom-in",
         "mobile_content_alignment": "center",
-        "padding_top": 12,
-        "padding_bottom": 32
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "featured_collection": {
       "type": "main-featured-collection",
+      "custom_css": [
+        "footer {border-top: solid black 1px;}"
+      ],
       "settings": {
-        "title": "Featured products",
+        "title": "Bestsellers.",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -54,7 +57,7 @@
         "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "color_scheme": "inverse",
+        "color_scheme": "accent-2",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -68,14 +71,14 @@
       }
     },
     "8c345df2-3c38-4a9a-9691-9a67b8479b15": {
-      "type": "featured-blog",
+      "type": "main-featured-blog",
       "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "blog": "",
+        "heading": "Blogs.",
+        "heading_size": "h2",
+        "blog": "anxiety-relief-rings",
         "post_limit": 3,
         "columns_desktop": 3,
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "show_image": true,
         "show_date": true,
         "show_author": false,

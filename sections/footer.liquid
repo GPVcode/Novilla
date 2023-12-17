@@ -8,12 +8,19 @@
 {%- style -%}
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-    border-top: solid black 3px;
   }
 
+  .footer__content-bottom-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  #shopify-section-sections--21792921387315__footer footer {
+    border-top: solid black 1px;
   }
 
   @media screen and (min-width: 750px) {
@@ -354,7 +361,9 @@
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
-        <small class="copyright__content">{{ powered_by_link }}</small>
+        <small class="copyright__content">
+        <!-- {{ powered_by_link }} -->
+        </small>
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
