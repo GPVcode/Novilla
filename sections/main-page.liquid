@@ -1,9 +1,16 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  /* ABOUT US PADDING SOLUTION */
+  section#shopify-section-template--21792920699187__main {
+      padding: 3rem;
+      display: flex;
+      justify-content: center;
+  }
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    /* padding: 3rem; */
   }
 
   @media screen and (min-width: 750px) {

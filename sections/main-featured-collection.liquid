@@ -43,6 +43,8 @@
 
   .card-wrapper.product-card-wrapper.underline-links-hover {
     border: solid black 1px;
+    margin: 0;
+    
 }
 
   .section#shopify-section-template--21782659072307__featured_collection{
@@ -64,6 +66,7 @@
     border-bottom: solid black 1px;
   }
 
+  ul#Slider-template--21792920535347__featured_collection,
   li#Slide-template--21782659072307__featured_collection-1,
   li#Slide-template--21792920535347__featured_collection-1 {
     margin: 0;
@@ -103,6 +106,7 @@
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
+
         </h2>
         
       {%- endif -%}

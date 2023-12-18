@@ -2,6 +2,13 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+    main#MainContent {
+      padding: 3rem;
+  }
+
+  li.grid__item.scroll-trigger.animate--slide-in {
+    border: solid black 1px;
+  }
   @media screen and (max-width: 749px) {
     .collection-hero--with-image .collection-hero__inner {
       padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
