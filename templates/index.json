@@ -42,7 +42,7 @@
     "featured_collection": {
       "type": "main-featured-collection",
       "custom_css": [
-        "footer {border-top: solid black 1px;}"
+
       ],
       "settings": {
         "title": "Bestsellers.",
@@ -61,7 +61,7 @@
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",

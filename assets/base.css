@@ -98,6 +98,7 @@ html.no-js .no-js-hidden {
   margin: 0 auto;
   padding: 3rem;
 } */
+
 .section-template--21792920535347__image-with-text-padding.gradient.color-background-1 {
     padding: 0;
 }
@@ -109,14 +110,14 @@ html.no-js .no-js-hidden {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: solid black 1px;
+  /* border-bottom: solid black 1px; */
 }
 
 .image-with-text__media.image-with-text__media--medium.global-media-settings.gradient.color-inverse.media.animate--zoom-in {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: solid black 1px;
+  /* border-bottom: solid black 1px; */
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {

@@ -3,12 +3,66 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e026610b-15ec-4907-8362-8785bf2d6acb": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21792920699187__e026610b-15ec-4907-8362-8785bf2d6acb-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Crafting Serenity and Focus<\/strong>",
+            "text": "<p>Novilla champions simplicity and elegance. Our rings, from sterling silver spinners to fidget bands, are more than jewelry—they're daily companions in your quest for calmness and concentration.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21792920699187__e026610b-15ec-4907-8362-8785bf2d6acb-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Mindful Jewelry<\/strong>",
+            "text": "<p>In our fast-paced times, Novilla's rings remind you to pause and refocus. They're not just accessories; they're mindfulness tools, aiding you in work, study, or daily routines.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21792920699187__e026610b-15ec-4907-8362-8785bf2d6acb-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Empowering Craftsmanship<\/strong>",
+            "text": "<p>Novilla's rings aren't just products; they're symbols of inner peace and focus. Each piece connects you with your calm center, boosting concentration and harmony.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21792920699187__e026610b-15ec-4907-8362-8785bf2d6acb-column-1",
+        "template--21792920699187__e026610b-15ec-4907-8362-8785bf2d6acb-column-2",
+        "template--21792920699187__e026610b-15ec-4907-8362-8785bf2d6acb-column-3"
+      ],
+      "settings": {
+        "title": "Our Vision",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "shopify:\/\/collections\/all",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "e026610b-15ec-4907-8362-8785bf2d6acb"
   ]
 }

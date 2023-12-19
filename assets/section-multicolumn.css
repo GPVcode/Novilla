@@ -65,7 +65,8 @@
 }
 
 .multicolumn.background-primary .multicolumn-card {
-  background: rgb(var(--color-background))
+  /* background: rgb(var(--color-background)) */
+    background-color: #dce9e0;
     linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
 }
 
@@ -87,6 +88,8 @@
 .multicolumn-card__info > :nth-child(2) {
   margin-top: 1rem;
 }
+
+
 
 .multicolumn-list__item.center .media--adapt,
 .multicolumn-list__item .media--adapt .multicolumn-card__image {

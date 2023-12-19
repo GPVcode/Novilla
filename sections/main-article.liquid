@@ -1,6 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="article-wrapper">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -20,6 +21,7 @@
                 style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"
               {% endif %}
             >
+              <h2>HELLLOO</h2>
               <img
                 srcset="
                   {% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
@@ -37,6 +39,7 @@
                 width="{{ article.image.width }}"
                 height="{{ article.image.height }}"
                 alt="{{ article.image.alt | escape }}"
+                class="article-img"
               >
             </div>
           </div>
@@ -85,12 +88,13 @@
     {%- endcase -%}
   {%- endfor -%}
 
-  <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
-      <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-      {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
-    </a>
-  </div>
+ 
+    <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
+        <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+        {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+      </a>
+    </div>
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div
@@ -273,8 +277,10 @@
           <input type="submit" class="button" value="{{ 'blogs.article.post' | t }}">
         {% endform %}
       </div>
+      
     </div>
   {%- endif -%}
+  </div>
 </article>
 
 <script type="application/ld+json">
