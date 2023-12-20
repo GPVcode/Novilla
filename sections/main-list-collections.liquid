@@ -1,7 +1,16 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
-
-<div class="page-width">
+{%- style -%}
+  .main-collection-list-page {
+    padding: 4rem 2rem 6rem 2rem;
+  }
+  @media screen and (min-width: 750px) {
+  .main-collection-list-page {
+    padding: 4rem 4rem 6rem 4rem;
+  }
+  }
+{%- endstyle -%}
+<div class="page-width main-collection-list-page">
   <h1 class="title title--primary inline-richtext{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ section.settings.title }}
   </h1>

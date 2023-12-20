@@ -3,12 +3,15 @@
 
 {%- style -%}
     main#MainContent {
-      padding: 4rem 2rem;
+      padding: 4rem 4rem 6rem 4rem;
   }
 
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 745px) {
     .collection-hero--with-image .collection-hero__inner {
       padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
+    }
+    main#MainContent {
+      padding: 4rem 2rem 6rem 2rem;
     }
   }
 {%- endstyle -%}

@@ -18,7 +18,7 @@
     product-recommendations.related-products {
       /* padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; */
-      padding: 4rem 2rem;
+      padding: 4rem 2rem 6rem 2rem;
     }
 
     .card__inner.color-background-1.gradient.ratio {
@@ -26,9 +26,11 @@
     }
 
     @media screen and (min-width: 750px) {
-      .section-{{ section.id }}-padding {
-        padding-top: {{ section.settings.padding_top }}px;
-        padding-bottom: {{ section.settings.padding_bottom }}px;
+      .section-{{ section.id }}-padding,
+      product-recommendations.related-products {
+        /* padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px; */
+        padding: 4rem 4rem 6rem 4rem;
       }
     }
   {%- endstyle -%}

@@ -107,10 +107,10 @@
     width: 100%;
   }
 
-  .multicolumn-list:not(.slider) {
+  /* .multicolumn-list:not(.slider) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 750px) {

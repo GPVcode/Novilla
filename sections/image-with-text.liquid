@@ -2,22 +2,33 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    /* padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; */
-    /* padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; */
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  .image-with-text__grid.grid.grid--gapless.grid--1-col.grid--2-col-tablet.image-with-text__grid--reverse {
+  /* .image-with-text__grid.grid.grid--gapless.grid--1-col.grid--2-col-tablet.image-with-text__grid--reverse {
       border-bottom: solid black 1px;
   }
+ */
+  /* This only affect the text */
+  .image-with-text__text-item.grid__item {
+    border-right: none;
+    border-bottom: solid black 1px;
+  }
 
-
-  .image-with-text__media.image-with-text__media--adapt.global-media-settings.gradient.color-accent-1.media.animate--zoom-in {
+  div.image-with-text__media{
     border: none;
-    border-left: solid black 1px;
+    /* border-bottom: solid black 1px; */
   }
 
   a.button.button--primary {
     border: solid black 1px;
+  }
+
+  ,image-with-text__heading,
+  .image-with-text__text {
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -26,19 +37,18 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  }
 
-  @media screen and (max-width: 750px){
     .image-with-text__text-item.grid__item {
       border-right: none;
-      /* border-bottom: solid black 1px; */
+      border-bottom: solid black 1px;
     }
 
-    .image-with-text__media.image-with-text__media--adapt.global-media-settings.background-transparent.media.animate--zoom-in {
+    div.image-with-text__media{
       border: none;
       border-bottom: solid black 1px;
     }
   }
+
 {%- endstyle -%}
 
 {%- liquid
@@ -61,7 +71,8 @@
             {% if section.settings.height == 'adapt' and section.settings.image != blank %}
               style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
             {% endif %}
-          >
+          >  
+
             {%- if section.settings.image != blank -%}
               {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
                 {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
