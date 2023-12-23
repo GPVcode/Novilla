@@ -1,9 +1,10 @@
 .card-wrapper {
+  overflow: hidden;
   color: inherit;
   height: 100%;
   position: relative;
   text-decoration: none;
-  border: solid black 1px;
+  border: solid gray 1px;
 }
 
 .card {
@@ -71,7 +72,7 @@
 /* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
 .card__inner.color-background-1 {
   background: transparent;
-  border-bottom: solid black 1px;
+  border-bottom: solid gray 1px;
 }
 
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
@@ -118,7 +119,8 @@
 
 .card__media {
   margin: var(--image-padding);
-  width: calc(100% - 2 * var(--image-padding));
+  width: calc(100%);
+  z-index: -5;
 }
 
 .card--standard .card__media {

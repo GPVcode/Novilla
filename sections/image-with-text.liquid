@@ -1,51 +1,39 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
-  /* .image-with-text__grid.grid.grid--gapless.grid--1-col.grid--2-col-tablet.image-with-text__grid--reverse {
-      border-bottom: solid black 1px;
-  }
- */
-  /* This only affect the text */
+  
   .image-with-text__text-item.grid__item {
     border-right: none;
-    border-bottom: solid black 1px;
+    border-bottom: solid gray 1px;
   }
-
+  
   div.image-with-text__media{
+    position: relative;
     border: none;
-    /* border-bottom: solid black 1px; */
+    border-bottom: solid gray 1px;
   }
 
   a.button.button--primary {
-    border: solid black 1px;
+    border: solid gray 1px;
   }
-
-  ,image-with-text__heading,
-  .image-with-text__text {
-    display: flex;
-    flex-direction: column;
-  }
-
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-
     .image-with-text__text-item.grid__item {
-      border-right: none;
-      border-bottom: solid black 1px;
+      border-right: solid gray 1px;
+      border-bottom: solid gray 1px;
     }
-
     div.image-with-text__media{
       border: none;
-      border-bottom: solid black 1px;
+      border-bottom: solid gray 1px;
     }
   }
 
@@ -66,13 +54,13 @@
     <div class="image-with-text image-with-text--{{ section.settings.content_layout }} isolate{% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == section.settings.section_color_scheme and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %} collapse-corners{% endunless %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div class="image-with-text__grid grid grid--gapless grid--1-col grid--{% if section.settings.desktop_image_width == 'medium' %}2-col-tablet{% else %}3-col-tablet{% endif %}{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
         <div class="image-with-text__media-item image-with-text__media-item--{{ section.settings.desktop_image_width }} image-with-text__media-item--{{ section.settings.desktop_content_position }} grid__item">
+          
           <div
             class="image-with-text__media image-with-text__media--{{ section.settings.height }} global-media-settings{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}{% if section.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}"
             {% if section.settings.height == 'adapt' and section.settings.image != blank %}
               style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"
             {% endif %}
           >  
-
             {%- if section.settings.image != blank -%}
               {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
                 {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
@@ -89,7 +77,7 @@
               {%- endif -%}
               {{
                 section.settings.image
-                | image_url: width: 1500
+                | image_url: width: 1400
                 | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
               }}
             {%- else -%}

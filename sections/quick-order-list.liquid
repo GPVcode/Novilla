@@ -20,7 +20,6 @@
   }
 {%- endstyle -%}
 
-{% comment %} TODO: enable theme-check once `line_items_for` is accepted as valid filter {% endcomment %}
 {% # theme-check-disable %}
 {%- assign items_in_cart = cart | line_items_for: product | sum: 'quantity' -%}
 {% # theme-check-enable %}
@@ -176,7 +175,6 @@
             </noscript>
             <div class="totals__product-total">
               <span class="totals__subtotal-value">
-                {% comment %} TODO: enable theme-check once `line_items_for` is accepted as valid filter {% endcomment %}
                 {% # theme-check-disable %}
                 {{ cart | line_items_for: product | sum: 'original_line_price' | money }}
                 {% # theme-check-enable %}

@@ -1,9 +1,9 @@
 {
   "current": {
     "logo_width": 150,
-    "type_header_font": "inconsolata_n4",
-    "heading_scale": 110,
-    "type_body_font": "anonymous_pro_n4",
+    "type_header_font": "playfair_display_n4",
+    "heading_scale": 100,
+    "type_body_font": "dm_sans_n4",
     "body_scale": 105,
     "page_width": 1400,
     "spacing_sections": 20,

@@ -11,7 +11,7 @@
 } */
 
 img.article-img {
-  border: solid black 1px;
+  border: solid gray 1px;
 }
 
 @media screen and (min-width: 750px) {
@@ -88,9 +88,9 @@ img.article-img {
   }
 }
 
-.article-template__title {
-  margin: 0;
-}
+/* .article-template__title {
+    margin: 0rem 4rem 2rem 4rem;
+} */
 
 .article-template__title:not(:only-child) {
   margin-bottom: 1rem;

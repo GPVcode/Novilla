@@ -20,7 +20,7 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
   #shopify-section-sections--21792921387315__footer footer {
-    border-top: solid black 1px;
+    border-top: solid gray 1px;
   }
 
   @media screen and (min-width: 750px) {
@@ -239,7 +239,6 @@
 
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
-              {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
               {% # theme-check-disable %}
               {{ shop | login_button: action: 'follow' }}
               {% # theme-check-enable %}
@@ -362,7 +361,6 @@
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
         <small class="copyright__content">
-        <!-- {{ powered_by_link }} -->
         </small>
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
