@@ -14,6 +14,7 @@ img.article-img {
   border: solid gray 1px;
 }
 
+
 @media screen and (min-width: 750px) {
   .article-template > *:first-child:not(.article-template__hero-container) {
     margin-top: calc(5rem + var(--page-width-margin));
@@ -84,6 +85,7 @@ img.article-img {
 
 @media screen and (min-width: 750px) {
   .article-template header {
+    margin-left: 4rem;
     margin-top: 5rem;
   }
 }

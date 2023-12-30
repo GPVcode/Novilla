@@ -74,6 +74,14 @@
           {{ block.shopify_attributes }}
         >
           {{ article.content }}
+
+          <a
+            href="{{ collections.all.url }}"
+              class="blog-buy-btn button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+              {{ block.shopify_attributes }}
+          >
+          Shop Now
+         </a>
         </div>
 
       {%- when 'share' -%}
