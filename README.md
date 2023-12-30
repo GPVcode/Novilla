@@ -33,7 +33,4 @@ This repository serves as a collaborative hub for the development team, ensuring
 - Use version control for tracking changes and collaboration.
 
 ## Support
-For queries or support related to this repository, contact the development team at [developer contact info].
-
-## License
-Licensed under [LICENSE NAME]. See `LICENSE.md` for details.
+For queries or support related to this repository, contact the development team at gpvdev8@gmail.com.
