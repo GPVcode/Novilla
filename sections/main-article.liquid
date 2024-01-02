@@ -74,7 +74,7 @@
           {{ block.shopify_attributes }}
         >
           {{ article.content }}
-
+          {% comment %} Shop Now Button {% endcomment %}
           <a
             href="{{ collections.all.url }}"
               class="blog-buy-btn button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
